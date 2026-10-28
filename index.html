@@ -2,24 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CIS3100 ERP - Trading Manifest</title>
+    <title>trading_manifest.json</title>
     <style>
-        body { font-family: monospace; background: #121212; color: #00ffcc; padding: 20px; }
-        pre { background: #1e1e1e; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        body { background: #121212; color: #e0e0e0; font-family: monospace; padding: 20px; }
+        pre { white-space: pre-wrap; word-wrap: break-word; }
     </style>
 </head>
 <body>
-    <h2>Trading Manifest Data</h2>
-    <pre id="json-output">Loading data...</pre>
-
+    <pre id="json"></pre>
     <script>
         fetch('trading_manifest.json')
-            .then(response => response.json())
+            .then(res => res.json())
             .then(data => {
-                document.getElementById('json-output').textContent = JSON.stringify(data, null, 2);
-            })
-            .catch(error => {
-                document.getElementById('json-output').textContent = 'Error loading JSON: ' + error;
+                document.getElementById('json').textContent = JSON.stringify(data, null, 2);
             });
     </script>
 </body>
