@@ -1,0 +1,17 @@
+{
+  "trader_first_name": "Jonathan",
+  "trader_last_name": "Dang",
+  "timestamp": "2026-10-27T00:00:00Z",
+  "trades": [
+    {
+      "ticker": "CSCO",
+      "start_date": "2026-10-27",
+      "start_price": 108.0,
+      "end_date": "2026-12-30",
+      "target_price": 118.0,
+      "doi": "Jonathan-Dang-CSCO-46315.7424446644",
+      "initiation_status_metric": 0.58,
+      "pct_diff_current_vs_target": -5.61
+    }
+  ]
+}

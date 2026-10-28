@@ -1,6 +1,0 @@
-{
-  "name": "TradeManifest ERP & BI Hub",
-  "description": "Enterprise trading manifest publisher with Yahoo Finance OHLC data, target progress tracking, DOI research attribution, and static JSON manifest endpoints.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
