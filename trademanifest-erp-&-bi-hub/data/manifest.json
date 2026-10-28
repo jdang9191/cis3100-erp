@@ -1,0 +1,37 @@
+{
+  "trader_first_name": "Jonathan",
+  "trader_last_name": "Dang",
+  "timestamp": "2026-10-27T20:40:00.000Z",
+  "trades": [
+    {
+      "ticker": "NVDA",
+      "start_date": "2026-02-02",
+      "start_price": 172.50,
+      "end_date": "2026-12-18",
+      "target_price": 240.00,
+      "doi": "10.1016/j.jbankfin.2024.107120",
+      "initiation_status_metric": 1.45,
+      "pct_diff_current_vs_target": -9.19
+    },
+    {
+      "ticker": "AAPL",
+      "start_date": "2026-01-15",
+      "start_price": 224.00,
+      "end_date": "2026-11-20",
+      "target_price": 260.00,
+      "doi": "10.1257/aer.20230894",
+      "initiation_status_metric": 0.82,
+      "pct_diff_current_vs_target": -0.73
+    },
+    {
+      "ticker": "MSFT",
+      "start_date": "2026-03-10",
+      "start_price": 415.00,
+      "end_date": "2026-12-31",
+      "target_price": 500.00,
+      "doi": "10.1111/jofi.13289",
+      "initiation_status_metric": 1.12,
+      "pct_diff_current_vs_target": -11.60
+    }
+  ]
+}

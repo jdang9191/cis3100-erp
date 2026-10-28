@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TradingManifest",
+  "description": "Standard schema for trading manifest JSON documents from external systems",
+  "type": "object",
+  "properties": {
+    "trader_first_name": {
+      "type": "string",
+      "description": "First name of the executing trader"
+    },
+    "trader_last_name": {
+      "type": "string",
+      "description": "Last name of the executing trader"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 creation timestamp of the manifest"
+    },
+    "trades": {
+      "type": "array",
+      "description": "List of active or resolved trades",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ticker": {
+            "type": "string",
+            "description": "Ticker symbol of the financial asset"
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Trade initiation date (YYYY-MM-DD)"
+          },
+          "start_price": {
+            "type": "number",
+            "description": "Asset purchase price at trade start"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date",
+            "description": "Target resolution or closing date of the trade"
+          },
+          "target_price": {
+            "type": "number",
+            "description": "The target price for determining execution or exit strategy"
+          },
+          "doi": {
+            "type": "string",
+            "description": "Document ID (Research paper / justification source identifier)"
+          },
+          "initiation_status_metric": {
+            "type": "number",
+            "description": "Initial health indicator status value (positive or negative)"
+          },
+          "pct_diff_current_vs_target": {
+            "type": "number",
+            "description": "Percentage deviation from target price (positive or negative value)"
+          }
+        },
+        "required": [
+          "ticker",
+          "start_date",
+          "start_price",
+          "end_date",
+          "target_price",
+          "doi",
+          "initiation_status_metric",
+          "pct_diff_current_vs_target"
+        ]
+      }
+    }
+  },
+  "required": [
+    "trader_first_name",
+    "trader_last_name",
+    "timestamp",
+    "trades"
+  ]
+}
